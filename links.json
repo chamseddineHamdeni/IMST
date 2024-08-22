@@ -1,0 +1,16 @@
+{
+    "teacher1": {
+        "password": "password1",
+        "links": [
+            "https://example.com/sheet1.xlsx",
+            "https://example.com/sheet2.xlsx"
+        ]
+    },
+    "teacher2": {
+        "password": "password2",
+        "links": [
+            "https://example.com/sheet3.xlsx",
+            "https://example.com/sheet4.xlsx"
+        ]
+    }
+}
