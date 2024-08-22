@@ -7,7 +7,7 @@
         ]
     },
     "teacher2": {
-        "password": "password2",
+        "password": "password22",
         "links": [
             "https://example.com/sheet3.xlsx",
             "https://example.com/sheet4.xlsx"
