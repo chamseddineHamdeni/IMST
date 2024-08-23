@@ -1,16 +1,14 @@
 {
-    "teacher1": {
-        "password": "password1",
+    "FrenchTeacher": {
         "links": [
-            "https://example.com/sheet1.xlsx",
-            "https://example.com/sheet2.xlsx"
+            {"name": "French Resource 1", "url": "https://example.com/french1"},
+            {"name": "French Resource 2", "url": "https://example.com/french2"}
         ]
     },
-    "teacher2": {
-        "password": "password22",
+    "MathTeacher": {
         "links": [
-            "https://example.com/sheet3.xlsx",
-            "https://example.com/sheet4.xlsx"
+            {"name": "Math Resource 1", "url": "https://example.com/math1"},
+            {"name": "Math Resource 2", "url": "https://example.com/math2"}
         ]
     }
 }
