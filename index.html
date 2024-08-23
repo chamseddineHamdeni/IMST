@@ -19,7 +19,7 @@
         async function checkPassword() {
             const password = document.getElementById("teacherPassword").value;
             try {
-                const response = await fetch('links.json'); // Load the JSON file locally
+                const response = await fetch('links.json'); // Ensure this points to the correct JSON file
                 const data = await response.json();
 
                 if (data[password]) {
