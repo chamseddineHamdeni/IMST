@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Links Platform</title>
+</head>
+<body>
+    <h1>Welcome to the Teacher Links Platform</h1>
+    <p>Please enter your password:</p>
+    <input type="password" id="teacherPassword" placeholder="Enter your password">
+    <button onclick="checkPassword()">Submit</button>
+
+    <!-- Container for displaying the links -->
+    <div id="linksContainer"></div>
+
+    <script>
+        // Function to fetch the JSON file and check the password
+        async function checkPassword() {
+            const password = document.getElementById("teacherPassword").value;
+            try {
+                const response = await fetch('links.json'); // Load the JSON file locally
+                const data = await response.json();
+
+                if (data[password]) {
+                    displayLinks(data[password].links);
+                } else {
+                    alert("Incorrect password");
+                }
+            } catch (error) {
+                console.error('Error fetching the JSON file:', error);
+                alert("There was an error loading the links. Please try again later.");
+            }
+        }
+
+        // Function to display the links
+        function displayLinks(links) {
+            const container = document.getElementById("linksContainer");
+            container.innerHTML = ''; // Clear any existing content
+
+            links.forEach(link => {
+                const linkElement = document.createElement('a');
+                linkElement.href = link.url;
+                linkElement.textContent = link.name;
+                linkElement.style.display = 'block';
+                container.appendChild(linkElement);
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "FrenchTeacher": {
+        "links": [
+            {"name": "French Resource 1", "url": "https://example.com/french1"},
+            {"name": "French Resource 2", "url": "https://example.com/french2"}
+        ]
+    },
+    "MathTeacher": {
+        "links": [
+            {"name": "Math Resource 1", "url": "https://example.com/math1"},
+            {"name": "Math Resource 2", "url": "https://example.com/math2"}
+        ]
+    }
+}
